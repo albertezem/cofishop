@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Completion</title>
+    <style>
+        body {
+            background-color: #cebaa0; /* Pastel background */
+            font-family: 'Poppins', sans-serif;
+            color: #4b3832;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #4b3832;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #cebaa0;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .lesson-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Lesson sections */
+        .lesson {
+            background-color: 		#cab69e56;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .lesson:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Lesson titles */
+        .lesson h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Lesson content */
+        .lesson p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Scroll animation for fade-in effect */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #4b3832;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Scrollable content */
+        html, body {
+            height: 100%;
+            overflow-y: scroll;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="title">Text Completion 101</div>
+
+    <div class="lesson-container">
+    <div class="lesson">
+        <h2>What are text completion questions?</h2>
+        <p>On the Reading and Writing section of your SAT, some questions will provide an unfinished passage that introduces information about an unfamiliar topic. Based on that information, you'll be asked to select the choice that <strong>most logically completes</strong> the text.</p>
+
+        <h2>Inferences: Example</h2>
+        <p><strong>Adaptations to cold temperatures have high metabolic costs. It is expensive, in terms of energy use, for land plants and animals to withstand very cold temperatures, and it gets more expensive the colder it gets, which means that the lower the air temperature, the fewer species have evolved to survive it. This factor, in conjunction with the decline in air temperature with increasing elevation, explains the distribution of species diversity in mountain ecosystems: you find fewer species high up a mountain than at the mountain’s base because ______</strong></p>
+
+        <h2>Which choice most logically completes the text?</h2>
+        <ul>
+            <li>(Choice A) there are relatively few environments hospitable to species that are adapted to live in low air temperatures.</li>
+            <li>(Choice B) there are relatively few species with the adaptations necessary to tolerate the temperatures at high elevations.</li>
+            <li>(Choice C) adaptations that allow plants and animals to survive in rocky environments are metabolically costly.</li>
+            <li>(Choice D) some mountain environments are at elevations so high that no plants or animals can survive them.</li>
+        </ul>
+
+        <h2>Explanation:</h2>
+        <p>We should start by paraphrasing the information provided in the passage:</p>
+        <ul>
+            <li>Cold temperatures are costly for organisms to survive in.</li>
+            <li>Few species have evolved to survive cold weather.</li>
+            <li>The temperature is colder at higher elevation.</li>
+            <li>Fewer species live at the top of a mountain than at the base of the mountain.</li>
+        </ul>
+        <p>In order to logically complete the text, we need to connect the dots between these ideas. Which choice does that?</p>
+
+        <ul>
+            <li><strong>Choice A:</strong> Incorrect — focuses on the number of environments instead of the number of species.</li>
+            <li><strong>Choice C:</strong> Incorrect — focuses on rocky environments, not high elevations or cold temperatures.</li>
+            <li><strong>Choice D:</strong> Incorrect — introduces a new claim instead of explaining the given one.</li>
+            <li><strong>Choice B:</strong> Correct — connects the idea that few species can survive cold weather and high elevations.</li>
+        </ul>
+
+        <h2>How should we think about inferences questions?</h2>
+        <p>Inferences questions are all about connecting information and ideas to create arguments.</p>
+        <p>Arguments can be broken into two parts: <strong>premises</strong> and <strong>conclusions</strong>.</p>
+
+        <h2>Premises</h2>
+        <p>Premises are the facts that an argument is based on. When premises are connected, they provide evidence for the conclusion.</p>
+
+        <h2>Conclusion</h2>
+        <p>The conclusion is the central claim that the argument is trying to support.</p>
+
+        <h2>Example:</h2>
+        <ul>
+            <li>Premise 1: Cold temperatures are costly for organisms to survive in.</li>
+            <li>Premise 2: Few species have evolved to survive cold weather.</li>
+            <li>Premise 3: The temperature is colder at higher elevation.</li>
+            <li>Conclusion: Fewer species live at the top of a mountain than at the base of the mountain.</li>
+        </ul>
+        <p>The blank is preceded by the transition word "because," so we're looking for further support, not a new conclusion.</p>
+
+        <h2>How to approach inferences questions:</h2>
+        <ol>
+            <li><strong>Step 1:</strong> Separate the text into bullet points.</li>
+            <p>Read the passage closely and consider each idea as a bullet point. This creates a progression for the argument and helps you see gaps.</p>
+
+            <li><strong>Step 2:</strong> Examine the argument.</li>
+            <p>Consider how the pieces of information fit together. What’s the connection between them?</p>
+
+            <li><strong>Step 3:</strong> Explore the choices.</li>
+            <p>Look at the choices one by one. Ask yourself if the information completes the argument logically.</p>
+
+            <li><strong>Step 4:</strong> Select the choice that strengthens the argument.</li>
+            <p>The correct choice should fit with the information provided and strengthen the argument.</p>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

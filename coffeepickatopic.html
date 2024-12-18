@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Home</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #cebaa0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #4b3832;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 1s ease forwards 0.5s;
+        }
+
+        /* Decorative circle elements */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .circle.small {
+            width: 150px;
+            height: 150px;
+            bottom: 10%;
+            left: 5%;
+        }
+
+        .circle.large {
+            width: 300px;
+            height: 300px;
+            top: 15%;
+            right: 10%;
+        }
+
+        /* Button container */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 1s;
+        }
+
+        /* Button styling */
+        .choice-button {
+            background-color: #4b3832;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .choice-button:hover {
+            background-color: #2c1e18;
+            transform: translateY(-5px);
+        }
+
+        /* Keyframe animations for smooth fade-ins */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Choose Your SAT Topic</h1>
+
+    <div class="button-container">
+        <a href="sat-english.html" class="choice-button">SAT English</a>
+        <a href="sat-math.html" class="choice-button">SAT Math</a>
+    </div>
+
+    <div class="circle small"></div>
+    <div class="circle large"></div>
+
+</body>
+</html>
